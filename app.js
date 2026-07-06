@@ -2,38 +2,38 @@
 
 // --- 1. Portfolio Gallery Dataset (32 Premium Designs) ---
 const galleryImages = [
-  { id: "GL-1", category: "Bridal", title: "Royal Maharaja Cuffs", description: "Heavy bridal detailing featuring micro-intricate sketches of royal figures and botanical grids.", tags: ["bridal", "heavy", "mughal"], url: "https://i.pinimg.com/originals/db/19/d9/db19d97a10ca9106e594ced0815daa37.jpg" },
-  { id: "GL-2", category: "Bridal", title: "Lotus Lattice Glove", description: "Mandala grids flowing into delicate lotus-inspired lattices covering fingers and wrists.", tags: ["lotus", "lattice", "glove"], url: "https://i.pinimg.com/564x/cd/92/c3/cd92c326489844f87055455457c4ac4c.jpg" },
-  { id: "GL-3", category: "Arabic", title: "Bespoke Floral Trail", description: "Thick shaded vines with modern negative spacing highlighting leaf silhouettes.", tags: ["arabic", "trail", "floral"], url: "https://i.pinimg.com/750x/9d/fe/97/9dfe978e41ff651f6e5313d32e4f9642.jpg" },
-  { id: "GL-4", category: "Portrait", title: "Bride & Groom Figures", description: "Highly customized portrait work depicting the sacred wedding varmala scene on palms.", tags: ["portrait", "bride", "groom"], url: "https://i.pinimg.com/564x/f0/57/93/f0579390e35e2351697b694862fee202.jpg" },
-  { id: "GL-5", category: "Traditional", title: "Mughal Jaal cuffs", description: "Classic dense Indian checks pattern (jaal) with fine floral terminations.", tags: ["traditional", "jaal", "heavy"], url: "https://www.tidytale.com/wp-content/uploads/2021/03/LATEST_-50-Rakshabandhan-Mehndi-Designs-2020-Latest-Rakhi-Mehndi-Images.jpg" },
-  { id: "GL-6", category: "Minimalist", title: "Delicate Mandala Rings", description: "Minimal circular central mandalas paired with geometric ring highlights on fingers.", tags: ["minimal", "mandala", "rings"], url: "https://simplecraftidea.com/wp-content/uploads/2022/04/1-28.jpg" },
-  { id: "GL-7", category: "Bridal", title: "Elephant Motif Trails", description: "Sacred elephant (haathi) motifs integrated into heavy sangeet cuff designs.", tags: ["elephant", "bridal", "traditional"], url: "https://cdn.arabmehndi.com/wp-content/uploads/heena-mehndi-design-09.png" },
-  { id: "GL-8", category: "Arabic", title: "Contemporary Geometric Vines", description: "Sharp diagonal lines contrasted with soft organic leaves for modern brides.", tags: ["arabic", "modern", "vines"], url: "https://blog.shaadivyah.com/wp-content/uploads/2024/06/243.png" },
-  { id: "GL-9", category: "Portrait", title: "Shehnai & Doli Sketches", description: "Custom wedding layouts detailing shehnai players and the bride's doli departure.", tags: ["portrait", "doli", "custom"], url: "https://stylinbysarita.com/wp-content/uploads/2024/12/simple-mehndi-designs-38-800x1000.jpg" },
-  { id: "GL-10", category: "Traditional", title: "Classic Peacock Mandala", description: "Centered peacock motifs detailed with fine teardrop swirls and checks.", tags: ["peacock", "traditional", "mandala"], url: "https://www.tidytale.com/wp-content/uploads/2021/06/arabic-mehndi-design-aage-ki.jpg" },
-  { id: "GL-11", category: "Minimalist", title: "Modern Chevron Bracelet", description: "A simple, elegant chevron band running around wrists resembling gold jewelry.", tags: ["minimal", "bracelet", "vines"], url: "https://blog.shaadivyah.com/wp-content/uploads/2024/09/485-2.png" },
-  { id: "GL-12", category: "Bridal", title: "Elbow Length Mughal Jaal", description: "Full arm coverage with micro-check detailing and cascading lotus cuffs.", tags: ["bridal", "elbow", "mughal"], url: "https://i.pinimg.com/564x/ce/4b/35/ce4b35152ec4437fbfec98c140f93e2f.jpg" },
-  { id: "GL-13", category: "Arabic", title: "Bold Rose Outlines", description: "Spacious Arabic trails focusing on bold shaded roses and blank finger rings.", tags: ["rose", "arabic", "shaded"], url: "https://allinformationalcenter.com/wp-content/uploads/2024/03/arabic-stylish-mehndi-design-2.webp" },
-  { id: "GL-14", category: "Portrait", title: "Ganesh & Kalash Sketches", description: "Auspicious Lord Ganesh and Kalash figures illustrated on the center palms.", tags: ["portrait", "ganesh", "kalash"], url: "https://www.tidytale.com/wp-content/uploads/2021/03/Top-Trending-Mehndi-Designs-2020-with-Videos.jpg" },
-  { id: "GL-15", category: "Traditional", title: "Rajasthan Royal Cuffs", description: "Rich traditional detailing inspired by Rajasthani palace arches and flora.", tags: ["rajasthan", "traditional", "cuffs"], url: "https://i.pinimg.com/originals/db/19/d9/db19d97a10ca9106e594ced0815daa37.jpg" },
-  { id: "GL-16", category: "Minimalist", title: "Graceful Leafy Bands", description: "Delicate bands of leaves wrapping fingers with clean negative spacing.", tags: ["minimal", "bands", "leaves"], url: "https://i.pinimg.com/564x/cd/92/c3/cd92c326489844f87055455457c4ac4c.jpg" },
-  { id: "GL-17", category: "Bridal", title: "Varmala Ceremony Palmer", description: "Intricate central illustration of the wedding garland exchange.", tags: ["bridal", "portrait", "varmala"], url: "https://i.pinimg.com/750x/9d/fe/97/9dfe978e41ff651f6e5313d32e4f9642.jpg" },
-  { id: "GL-18", category: "Arabic", title: "Diagonal Paisley Vine", description: "Flowing paisley outlines filled with fine micro-hatching lines.", tags: ["arabic", "paisley", "vine"], url: "https://i.pinimg.com/564x/f0/57/93/f0579390e35e2351697b694862fee202.jpg" },
-  { id: "GL-19", category: "Portrait", title: "Groom Portrait PALM", description: "Finely rendered sketch of the groom on the bride's hand.", tags: ["portrait", "groom", "custom"], url: "https://www.tidytale.com/wp-content/uploads/2021/03/LATEST_-50-Rakshabandhan-Mehndi-Designs-2020-Latest-Rakhi-Mehndi-Images.jpg" },
-  { id: "GL-20", category: "Traditional", title: "Mandala Core Glove", description: "Centered concentric circles with scalloped edges and heavy tips.", tags: ["traditional", "mandala", "glove"], url: "https://simplecraftidea.com/wp-content/uploads/2022/04/1-28.jpg" },
-  { id: "GL-21", category: "Minimalist", title: "Delicate Finger Tip Caps", description: "Shaded minimal caps on fingertips with delicate wrist strings.", tags: ["minimal", "tips", "bracelets"], url: "https://cdn.arabmehndi.com/wp-content/uploads/heena-mehndi-design-09.png" },
-  { id: "GL-22", category: "Bridal", title: "Cascading Lotus Armlet", description: "Armband details showing layered lotuses and pearl hanging strings.", tags: ["bridal", "lotus", "armlet"], url: "https://blog.shaadivyah.com/wp-content/uploads/2024/06/243.png" },
-  { id: "GL-23", category: "Arabic", title: "Modern Net & Rose Grid", description: "Contrast of bold roses and very fine diagonal checks overlay.", tags: ["arabic", "grid", "roses"], url: "https://stylinbysarita.com/wp-content/uploads/2024/12/simple-mehndi-designs-38-800x1000.jpg" },
-  { id: "GL-24", category: "Portrait", title: "Bride Figure Detail", description: "Finely rendered sketch of the bride in traditional attire.", tags: ["portrait", "bride", "custom"], url: "https://www.tidytale.com/wp-content/uploads/2021/06/arabic-mehndi-design-aage-ki.jpg" },
+  { id: "GL-1", category: "Bridal", title: "Royal Maharaja Cuffs", description: "Heavy luxury arm grids featuring dense botanical matrices and layered traditional patterns.", tags: ["bridal", "heavy", "mughal"], url: "work-1.jpg" },
+  { id: "GL-2", category: "Bridal", title: "Lotus Lattice Glove", description: "Mandala grids flowing into delicate lotus-inspired lattices covering fingers and wrists.", tags: ["lotus", "lattice", "glove"], url: "work-2.jpg" },
+  { id: "GL-3", category: "Arabic", title: "Bespoke Floral Trail", description: "Thick shaded vines with modern negative spacing highlighting leaf silhouettes.", tags: ["arabic", "trail", "floral"], url: "work-3.jpg" },
+  { id: "GL-4", category: "Portrait", title: "Bride & Groom Figures", description: "Highly customized portrait work depicting the sacred wedding varmala scene on palms.", tags: ["portrait", "bride", "groom"], url: "work-8.jpg" },
+  { id: "GL-5", category: "Traditional", title: "Mughal Jaal cuffs", description: "Classic dense Indian checks pattern (jaal) with fine floral terminations.", tags: ["traditional", "jaal", "heavy"], url: "work-5.jpg" },
+  { id: "GL-6", category: "Minimalist", title: "Delicate Mandala Rings", description: "Minimal circular central mandalas paired with geometric ring highlights on fingers.", tags: ["minimal", "mandala", "rings"], url: "work-6.png" },
+  { id: "GL-7", category: "Bridal", title: "Elephant Motif Trails", description: "Sacred elephant (haathi) motifs integrated into heavy sangeet cuff designs.", tags: ["elephant", "bridal", "traditional"], url: "work-7.png" },
+  { id: "GL-8", category: "Arabic", title: "Contemporary Geometric Vines", description: "Sharp diagonal lines contrasted with soft organic leaves for modern brides.", tags: ["arabic", "modern", "vines"], url: "work-8.jpg" },
+  { id: "GL-9", category: "Portrait", title: "Shehnai & Doli Sketches", description: "Custom wedding layouts detailing shehnai players and the bride's doli departure.", tags: ["portrait", "doli", "custom"], url: "work-9.jpg" },
+  { id: "GL-10", category: "Traditional", title: "Classic Peacock Mandala", description: "Centered peacock motifs detailed with fine teardrop swirls and checks.", tags: ["peacock", "traditional", "mandala"], url: "work-10.jpg" },
+  { id: "GL-11", category: "Minimalist", title: "Modern Chevron Bracelet", description: "A simple, elegant chevron band running around wrists resembling gold jewelry.", tags: ["minimal", "bracelet", "vines"], url: "work-11.png" },
+  { id: "GL-12", category: "Bridal", title: "Elbow Length Mughal Jaal", description: "Full arm coverage with micro-check detailing and cascading lotus cuffs.", tags: ["bridal", "elbow", "mughal"], url: "work-4.jpg" },
+  { id: "GL-13", category: "Arabic", title: "Bold Rose Outlines", description: "Spacious Arabic trails focusing on bold shaded roses and blank finger rings.", tags: ["rose", "arabic", "shaded"], url: "work-9.jpg" },
+  { id: "GL-14", category: "Portrait", title: "Ganesh & Kalash Sketches", description: "Auspicious Lord Ganesh and Kalash figures illustrated on the center palms.", tags: ["portrait", "ganesh", "kalash"], url: "work-12.jpg" },
+  { id: "GL-15", category: "Traditional", title: "Rajasthan Royal Cuffs", description: "Rich traditional detailing inspired by Rajasthani palace arches and flora.", tags: ["rajasthan", "traditional", "cuffs"], url: "work-1.jpg" },
+  { id: "GL-16", category: "Minimalist", title: "Graceful Leafy Bands", description: "Delicate bands of leaves wrapping fingers with clean negative spacing.", tags: ["minimal", "bands", "leaves"], url: "work-2.jpg" },
+  { id: "GL-17", category: "Bridal", title: "Varmala Ceremony Palmer", description: "Intricate central illustration of the wedding garland exchange.", tags: ["bridal", "portrait", "varmala"], url: "work-3.jpg" },
+  { id: "GL-18", category: "Arabic", title: "Diagonal Paisley Vine", description: "Flowing paisley outlines filled with fine micro-hatching lines.", tags: ["arabic", "paisley", "vine"], url: "work-8.jpg" },
+  { id: "GL-19", category: "Portrait", title: "Groom Portrait PALM", description: "Finely rendered sketch of the groom on the bride's hand.", tags: ["portrait", "groom", "custom"], url: "work-5.jpg" },
+  { id: "GL-20", category: "Traditional", title: "Mandala Core Glove", description: "Centered concentric circles with scalloped edges and heavy tips.", tags: ["traditional", "mandala", "glove"], url: "work-6.png" },
+  { id: "GL-21", category: "Minimalist", title: "Delicate Finger Tip Caps", description: "Shaded minimal caps on fingertips with delicate wrist strings.", tags: ["minimal", "tips", "bracelets"], url: "work-7.png" },
+  { id: "GL-22", category: "Bridal", title: "Cascading Lotus Armlet", description: "Armband details showing layered lotuses and pearl hanging strings.", tags: ["bridal", "lotus", "armlet"], url: "work-8.jpg" },
+  { id: "GL-23", category: "Arabic", title: "Modern Net & Rose Grid", description: "Contrast of bold roses and very fine diagonal checks overlay.", tags: ["arabic", "grid", "roses"], url: "work-9.jpg" },
+  { id: "GL-24", category: "Portrait", title: "Bride Figure Detail", description: "Finely rendered sketch of the bride in traditional attire.", tags: ["portrait", "bride", "custom"], url: "work-10.jpg" },
   { id: "GL-25", category: "Traditional", title: "Peacock Mesh Bands", description: "Rich peacock silhouettes framed inside circular flower bands.", tags: ["peacock", "mesh", "traditional"], url: "https://blog.shaadivyah.com/wp-content/uploads/2024/09/485-2.png" },
-  { id: "GL-26", category: "Minimalist", title: "Single Band Cuff", description: "One simple leafy band around the wrist simulating a bracelet.", tags: ["minimal", "cuff", "bracelet"], url: "https://i.pinimg.com/564x/ce/4b/35/ce4b35152ec4437fbfec98c140f93e2f.jpg" },
-  { id: "GL-27", category: "Bridal", title: "Royal Mughal Armlets", description: "Elbow-length cuffs reflecting royal durbar pillars and leaves.", tags: ["bridal", "mughal", "armlet"], url: "https://allinformationalcenter.com/wp-content/uploads/2024/03/arabic-stylish-mehndi-design-2.webp" },
-  { id: "GL-28", category: "Arabic", title: "Geometric Leafy Trail", description: "Crisp triangular check patterns detailed with micro leaves.", tags: ["arabic", "geometric", "trail"], url: "https://www.tidytale.com/wp-content/uploads/2021/03/Top-Trending-Mehndi-Designs-2020-with-Videos.jpg" },
-  { id: "GL-29", category: "Portrait", title: "Sacred Kalash Outline", description: "Auspicous kalash pot sketch on the center palm with flower chains.", tags: ["portrait", "kalash", "auspicious"], url: "https://i.pinimg.com/originals/db/19/d9/db19d97a10ca9106e594ced0815daa37.jpg" },
-  { id: "GL-30", category: "Traditional", title: "Rajasthani Jhumar lattice", description: "Lattice designs reflecting palace jhumar hanging lamps.", tags: ["traditional", "jhumar", "lattice"], url: "https://i.pinimg.com/564x/cd/92/c3/cd92c326489844f87055455457c4ac4c.jpg" },
-  { id: "GL-31", category: "Minimalist", title: "Linear Finger Ringlets", description: "Ultra-fine linear rings wrapping each finger separately.", tags: ["minimal", "finger", "ringlets"], url: "https://i.pinimg.com/750x/9d/fe/97/9dfe978e41ff651f6e5313d32e4f9642.jpg" },
-  { id: "GL-32", category: "Bridal", title: "Empress Floral Cuffs", description: "Heavy bridal sleeve cuffs depicting layered lotuses and checkers.", tags: ["bridal", "heavy", "lotus"], url: "https://i.pinimg.com/564x/f0/57/93/f0579390e35e2351697b694862fee202.jpg" }
+  { id: "GL-26", category: "Minimalist", title: "Single Band Cuff", description: "One simple leafy band around the wrist simulating a bracelet.", tags: ["minimal", "cuff", "bracelet"], url: "work-1.jpg" },
+  { id: "GL-27", category: "Bridal", title: "Royal Mughal Armlets", description: "Elbow-length cuffs reflecting royal durbar pillars and leaves.", tags: ["bridal", "mughal", "armlet"], url: "work-2.jpg" },
+  { id: "GL-28", category: "Arabic", title: "Geometric Leafy Trail", description: "Crisp triangular check patterns detailed with micro leaves.", tags: ["arabic", "geometric", "trail"], url: "work-3.jpg" },
+  { id: "GL-29", category: "Portrait", title: "Sacred Kalash Outline", description: "Auspicous kalash pot sketch on the center palm with flower chains.", tags: ["portrait", "kalash", "auspicious"], url: "work-8.jpg" },
+  { id: "GL-30", category: "Traditional", title: "Rajasthani Jhumar lattice", description: "Lattice designs reflecting palace jhumar hanging lamps.", tags: ["traditional", "jhumar", "lattice"], url: "work-5.jpg" },
+  { id: "GL-31", category: "Minimalist", title: "Linear Finger Ringlets", description: "Ultra-fine linear rings wrapping each finger separately.", tags: ["minimal", "finger", "ringlets"], url: "work-6.png" },
+  { id: "GL-32", category: "Bridal", title: "Empress Floral Cuffs", description: "Heavy bridal sleeve cuffs depicting layered lotuses and checkers.", tags: ["bridal", "heavy", "lotus"], url: "work-7.png" }
 ];
 
 // --- 2. Testimonial Reviews Dataset ---
@@ -825,4 +825,27 @@ Thank you,
 function closeDetailModal() {
   selectedBooking = null;
   document.getElementById("booking-detail-modal").style.display = "none";
+}
+
+function switchPriceTab(tab) {
+  const specBtn = document.getElementById("tab-btn-specialised");
+  const siderBtn = document.getElementById("tab-btn-sider");
+  const specContent = document.getElementById("tab-content-specialised");
+  const siderContent = document.getElementById("tab-content-sider");
+
+  if (!specBtn || !siderBtn || !specContent || !siderContent) return;
+
+  if (tab === "specialised") {
+    // Set specialised button active classes
+    specBtn.className = "px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border bg-gold-gradient text-darkBlack border-transparent shadow-gold-sm";
+    siderBtn.className = "px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border border-gold-luxury/20 text-gold-luxury bg-wine-dark/40 hover:bg-wine-deep";
+    specContent.classList.remove("hidden");
+    siderContent.classList.add("hidden");
+  } else {
+    // Set sider button active classes
+    siderBtn.className = "px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border bg-gold-gradient text-darkBlack border-transparent shadow-gold-sm";
+    specBtn.className = "px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border border-gold-luxury/20 text-gold-luxury bg-wine-dark/40 hover:bg-wine-deep";
+    specContent.classList.add("hidden");
+    siderContent.classList.remove("hidden");
+  }
 }

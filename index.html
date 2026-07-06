@@ -192,6 +192,7 @@
         <a href="#home" class="hover:text-gold-luxury transition-colors">Home</a>
         <a href="#about" class="hover:text-gold-luxury transition-colors">About</a>
         <a href="#services" class="hover:text-gold-luxury transition-colors">Services</a>
+        <a href="#pricing" class="hover:text-gold-luxury transition-colors">Pricing</a>
         <a href="#gallery" class="hover:text-gold-luxury transition-colors">Gallery</a>
         <a href="#why-us" class="hover:text-gold-luxury transition-colors">Why Us</a>
         <a href="#faqs" class="hover:text-gold-luxury transition-colors">FAQs</a>
@@ -215,6 +216,7 @@
         <a href="#home" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">Home</a>
         <a href="#about" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">About</a>
         <a href="#services" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">Services</a>
+        <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">Pricing</a>
         <a href="#gallery" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">Gallery</a>
         <a href="#why-us" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">Why Us</a>
         <a href="#faqs" onclick="toggleMobileMenu()" class="hover:text-gold-luxury transition-colors py-2">FAQs</a>
@@ -339,7 +341,7 @@
         <div class="lg:col-span-6 flex flex-col items-center justify-center">
           <div id="before-after-slider" class="relative w-full max-w-lg aspect-square sm:aspect-[4/3] rounded-2xl overflow-hidden border border-gold-luxury/20 shadow-gold-md cursor-ew-resize select-none">
             <!-- After Layer -->
-            <img src="https://i.pinimg.com/564x/cd/92/c3/cd92c326489844f87055455457c4ac4c.jpg" alt="Matured Henna Stain" class="absolute inset-0 w-full h-full object-cover" draggable="false">
+            <img src="work-2.jpg" alt="Matured Henna Stain" class="absolute inset-0 w-full h-full object-cover" draggable="false">
             <div class="absolute right-4 bottom-4 z-20 px-3 py-1 bg-darkBlack/70 border border-gold-luxury/30 backdrop-blur-sm rounded text-[10px] text-gold-luxury font-poppins uppercase tracking-widest">
               After: Matured Stain
             </div>
@@ -347,7 +349,7 @@
             <!-- Before Layer -->
             <div id="slider-before-layer" class="absolute inset-0 w-full h-full overflow-hidden" style="width: 50%;">
               <!-- Force image width to cover original container width -->
-              <img id="before-image-stretch" src="https://i.pinimg.com/originals/db/19/d9/db19d97a10ca9106e594ced0815daa37.jpg" alt="Henna Paste Application" class="absolute inset-0 h-full object-cover" draggable="false" style="max-width: none;">
+              <img id="before-image-stretch" src="work-3.jpg" alt="Henna Paste Application" class="absolute inset-0 h-full object-cover" draggable="false" style="max-width: none;">
               <div class="absolute left-4 bottom-4 z-20 px-3 py-1 bg-wine-dark/85 border border-gold-luxury/30 backdrop-blur-sm rounded text-[10px] text-gold-light font-poppins uppercase tracking-widest">
                 Before: Organic Paste
               </div>
@@ -504,13 +506,10 @@
             </div>
             <h3 class="font-cinzel text-xl font-bold text-gold-gradient mb-3">Fresh Organic Cones</h3>
             
-            <!-- [PRODUCT IMAGE PLACEHOLDER] 
-                 To add a product picture: uncomment the div below and set your image URL in the src tag -->
-            <!-- 
-            <div class="w-full h-24 mb-3 rounded-xl overflow-hidden border border-gold-luxury/10">
-              <img src="YOUR_IMAGE_URL_HERE" alt="Organic Henna Cones" class="w-full h-full object-cover">
-            </div> 
-            -->
+            <!-- Product Image Flyer -->
+            <div class="w-full h-28 mb-3 rounded-xl overflow-hidden border border-gold-luxury/10 bg-wine-dark/65 shadow-gold-sm">
+              <img src="cones-flyer.png" alt="Organic Henna Cones Flyer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
 
             <p class="font-cormorant text-sm italic text-ivory/60 mb-4">Handmade fresh henna cones prepared in small batches. 100% organic paste with eucalyptus oil for guaranteed dark stain.</p>
             
@@ -532,6 +531,142 @@
           <a href="https://wa.me/917020995603?text=Hello%21%20I%20would%20like%20to%20order%20some%20fresh%20organic%20henna%20cones%20from%20Punam%20Henna%20Atelier." target="_blank" rel="noopener noreferrer" class="mt-8 text-center py-2.5 bg-gold-luxury/10 border border-gold-luxury/30 text-gold-luxury text-xs font-semibold uppercase tracking-wider rounded-full hover:bg-gold-gradient hover:text-darkBlack transition-all">
             Order on WhatsApp
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7.5. Pricing Guide Section (Interactive Tabs) -->
+  <section id="pricing" class="relative z-10 w-full py-24 bg-wine-deep border-b border-gold-luxury/10">
+    <div class="absolute top-[10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-gold-luxury/5 blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-6 md:px-12">
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold-luxury text-xs font-semibold uppercase tracking-[0.25em] block mb-3">
+          Atelier Rate Cards
+        </span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-ivory mb-6">
+          Investment & <span class="text-gold-gradient">Price Guide</span>
+        </h2>
+        <div class="w-16 h-0.5 bg-gold-gradient mx-auto mb-6"></div>
+        <p class="font-cormorant text-base italic text-ivory/70">
+          Transparent rates tailored to design intricacy. Nominal travel fees are applied depending on location.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex justify-center gap-4 mb-12">
+        <button onclick="switchPriceTab('specialised')" id="tab-btn-specialised" class="px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border bg-gold-gradient text-darkBlack border-transparent shadow-gold-sm">
+          Specialised Events
+        </button>
+        <button onclick="switchPriceTab('sider')" id="tab-btn-sider" class="px-6 py-2 rounded-full font-cinzel text-xs font-bold uppercase tracking-wider transition-all border border-gold-luxury/20 text-gold-luxury bg-wine-dark/40 hover:bg-wine-deep">
+          Sider Custom Rates
+        </button>
+      </div>
+
+      <!-- Specialised Events Tab Content -->
+      <div id="tab-content-specialised" class="price-tab-content grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Package 1 -->
+        <div class="glass-panel p-8 rounded-2xl border border-gold-luxury/10 hover:border-gold-luxury/30 transition-all flex flex-col justify-between">
+          <div>
+            <span class="text-gold-luxury text-[10px] uppercase tracking-wider font-semibold">Signature Special</span>
+            <h4 class="font-cinzel text-lg font-bold text-ivory mt-1 mb-4">Bridal Package</h4>
+            <div class="font-cinzel text-3xl font-extrabold text-gold-gradient mb-6">
+              ₹3,500 <span class="text-xs text-ivory/40 font-normal">onwards</span>
+            </div>
+            <p class="font-cormorant text-sm italic text-ivory/60 mb-6">Customized bridal patterns featuring portrait couple sketches, sangeet cuffs, and dense traditional motifs.</p>
+          </div>
+          <a href="#book" class="w-full text-center py-2 bg-gold-luxury/10 border border-gold-luxury/20 text-gold-luxury text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-gold-gradient hover:text-darkBlack transition-all">Book Now</a>
+        </div>
+        <!-- Package 2 -->
+        <div class="glass-panel p-8 rounded-2xl border border-gold-luxury/10 hover:border-gold-luxury/30 transition-all flex flex-col justify-between">
+          <div>
+            <span class="text-gold-luxury text-[10px] uppercase tracking-wider font-semibold">Ceremony Special</span>
+            <h4 class="font-cinzel text-lg font-bold text-ivory mt-1 mb-4">Engagement Package</h4>
+            <div class="font-cinzel text-3xl font-extrabold text-gold-gradient mb-6">
+              ₹2,500 <span class="text-xs text-ivory/40 font-normal">flat</span>
+            </div>
+            <p class="font-cormorant text-sm italic text-ivory/60 mb-6">Exquisite circular mandalas, floral bands, and bespoke fusion layouts matching your ring-exchange style.</p>
+          </div>
+          <a href="#book" class="w-full text-center py-2 bg-gold-luxury/10 border border-gold-luxury/20 text-gold-luxury text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-gold-gradient hover:text-darkBlack transition-all">Book Now</a>
+        </div>
+        <!-- Package 3 -->
+        <div class="glass-panel p-8 rounded-2xl border border-gold-luxury/10 hover:border-gold-luxury/30 transition-all flex flex-col justify-between">
+          <div>
+            <span class="text-gold-luxury text-[10px] uppercase tracking-wider font-semibold">Festive Special</span>
+            <h4 class="font-cinzel text-lg font-bold text-ivory mt-1 mb-4">Baby Shower Package</h4>
+            <div class="font-cinzel text-3xl font-extrabold text-gold-gradient mb-6">
+              ₹2,000 <span class="text-xs text-ivory/40 font-normal">flat</span>
+            </div>
+            <p class="font-cormorant text-sm italic text-ivory/60 mb-6">Sweet traditional baby motifs, lotus bands, and customized palm outlines celebrating new arrivals.</p>
+          </div>
+          <a href="#book" class="w-full text-center py-2 bg-gold-luxury/10 border border-gold-luxury/20 text-gold-luxury text-xs font-semibold uppercase tracking-wider rounded-md hover:bg-gold-gradient hover:text-darkBlack transition-all">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Sider Custom Rates Tab Content -->
+      <div id="tab-content-sider" class="price-tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Arabic Columns -->
+        <div class="glass-panel p-8 rounded-2xl border border-gold-luxury/10">
+          <div class="flex items-center gap-3 mb-6 text-gold-luxury">
+            <span class="text-xl">🌸</span>
+            <h4 class="font-cinzel text-lg font-bold text-ivory">Arabic Mehendi</h4>
+          </div>
+          <div class="space-y-4 font-poppins text-xs text-ivory/80">
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Palm Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹150</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Wrist Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹300</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Half Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹350</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Full Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹550</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Traditional Columns -->
+        <div class="glass-panel p-8 rounded-2xl border border-gold-luxury/10">
+          <div class="flex items-center gap-3 mb-6 text-gold-luxury">
+            <span class="text-xl">🌸</span>
+            <h4 class="font-cinzel text-lg font-bold text-ivory">Traditional Mehendi</h4>
+          </div>
+          <div class="space-y-4 font-poppins text-xs text-ivory/80">
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Palm Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹350</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Wrist Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹600</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Half Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹800</span>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-gold-luxury/5">
+              <span>Full Hand (Both Sides)</span>
+              <span class="font-bold text-gold-luxury">₹1,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-ons Info -->
+        <div class="md:col-span-2 glass-panel p-6 rounded-xl border border-gold-luxury/10 bg-wine-dark/20 text-center font-poppins text-[10px] text-ivory/60 space-y-2">
+          <div class="flex flex-wrap justify-around gap-4 text-xs">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shoe-prints text-gold-luxury"></i> Leg Mehendi: <strong class="text-gold-luxury">starts from ₹300</strong></span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-user-tie text-gold-luxury"></i> Portrait Figure Sketches: <strong class="text-gold-luxury">₹300 per figure</strong></span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-car text-gold-luxury"></i> Travel Charges: <strong class="text-gold-luxury">Extra depending on area/distance</strong></span>
+          </div>
+          <p class="italic text-[9px] mt-2">Note: Sider charges start from ₹300 for both hands. Overall rates are calculated based on design density & style.</p>
         </div>
       </div>
     </div>
