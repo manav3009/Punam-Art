@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌿 Punam Henna Atelier - Luxury Bridal Portfolio
 
-## Getting Started
+A premium, cinematic, and responsive static website built for **Punam Henna Atelier** (Punam Umesh Mundada). Designed with a modern royal burgundy and champagne gold palette, smooth scroll animations, custom cursor sparkles, a before-after stain slider, and an integrated offline reservation registry dashboard.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📁 File Structure
+
+The project has a completely flat, optimized file structure, making it 100% serverless, fast, and simple to understand:
+
+```text
+punam-mehendi/
+├── index.html     # Semantic structure, Tailwind styling, and Google Fonts
+├── app.js         # Interactive sparkles, GSAP stats count-ups, and Admin Hub
+├── mandala.js     # Three.js 3D rotating gold mandala backdrop canvas
+├── .gitignore     # Git ignore rules
+└── README.md      # Deployment and project guidelines (This file)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚜️ Deployment Guide
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Since this website consists of pure static files, it can be deployed to **Vercel** or **GitHub Pages** in under two minutes with zero build configurations required.
 
-## Learn More
+### 🚀 Option A: Deploy on Vercel (Recommended)
+Vercel recognizes flat static directories automatically and deploys them instantly.
 
-To learn more about Next.js, take a look at the following resources:
+1. **Push your code to a GitHub Repository** (see GitHub guide below).
+2. Go to [Vercel](https://vercel.com) and log in with your GitHub account.
+3. Click **Add New** -> **Project**.
+4. Select the `punam-mehendi` repository from your list and click **Import**.
+5. Keep all default configurations (Vercel automatically detects it as a static project; do **not** configure any build steps or commands).
+6. Click **Deploy**! In seconds, you will receive a public, secure `https://punam-mehendi.vercel.app` domain.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🐙 Option B: Deploy on GitHub & GitHub Pages
 
-## Deploy on Vercel
+1. **Create a GitHub Repository**:
+   - Go to [GitHub](https://github.com) and create a new public repository named `punam-mehendi`.
+   - Do *not* initialize it with a README or gitignore (we already have them).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Initialize Git & Push Locally**:
+   Open your terminal (PowerShell or Git Bash) inside the project folder (`punam-mehendi`) and run:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initialize Punam Henna Atelier standalone static website"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/punam-mehendi.git
+   git push -u origin main
+   ```
+   *(Replace `YOUR_USERNAME` with your actual GitHub username)*.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Enable GitHub Pages**:
+   - In your GitHub repository page, click the **Settings** tab.
+   - Scroll down to the **Pages** menu on the left sidebar.
+   - Under **Build and deployment**, set the source to **Deploy from a branch**.
+   - Under **Branch**, select **`main`** and **`/ (root)`**, then click **Save**.
+   - Your site will be published at `https://YOUR_USERNAME.github.io/punam-mehendi/` within a minute!
+
+---
+
+## 🔑 Administrative Details
+
+- **Admin Hub Passcode**: **`punam@9420`**
+- **Dashboard Features**:
+  - Live statistics for bookings (Total, Pending, Approved, Completed).
+  - Searchable client registry database.
+  - One-click client notification pre-formatting via WhatsApp.
+  - **Dynamic Link Synchronization**: When a client submits a booking request, the WhatsApp message they send you contains an **Admin Quick Log Link**. Simply click this link in the message to automatically import their reservation directly into your laptop/phone's dashboard database!
