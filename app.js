@@ -147,8 +147,8 @@ function initStatsCounters() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        animateValue(brides, 0, 500, 2000, "+");
-        animateValue(experience, 0, 10, 1500, "+");
+        animateValue(brides, 0, 200, 2000, "+");
+        animateValue(experience, 0, 5, 1500, "+");
         animateValue(organic, 0, 100, 1500, "%");
         observer.unobserve(entry.target);
       }
